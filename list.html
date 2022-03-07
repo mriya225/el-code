@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,user-scalable=no,shrink-to-fit=no,viewport-fit=cover">
+    <title>应用</title>
+    <style>
+        body {
+            min-width: 320px;
+            max-width: 750px;
+            margin: 0 auto;
+            overflow-x: hidden;
+            background-color: #f6f6f6;
+            -webkit-tap-highlight-color: transparent;
+            padding: 0 0 2rem;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+        }
+
+        .category {
+            margin-top: 1rem;
+        }
+
+        .category .header {
+            padding: 0 1rem;
+            height: 50px;
+            background-color: white;
+            border-bottom: 1px solid #e1e1e1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .category .header h4 {
+            color: #656565;
+            margin: 0;
+            display: inline-block;
+            font-size: 15px;
+        }
+
+        .category .header span {
+            color: #696969;
+            font-size: 15px;
+        }
+
+        .category .list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .category .list:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .category .list li {
+            float: left;
+            width: 24.999%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: white;
+            text-align: center;
+            padding: 1.2rem .5rem 1.2rem;
+            border-right: 1px solid #e1e1e1;
+            cursor: pointer;
+            margin-bottom: .2rem;
+        }
+
+        .category .list li:first-child {
+            border-left: 1px solid #e1e1e1;
+        }
+
+        /*.category .list li:last-child,*/
+        .category .list li:nth-child(4) {
+            border-right: none;
+        }
+
+        .category .list li img {
+            width: 44px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .category .list li span {
+            color: #606060;
+            display: inline-block;
+            height: 40px;
+            margin-top: .15rem;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="category">
+        <div class="header">
+            <h4>疫情防控</h4>
+            <span>收起</span>
+        </div>
+        <ul class="list">
+            <li>
+                <img src="./src/img/1-1.png" alt="">
+                <span>每日上报</span>
+            </li>
+            <li>
+                <img src="./src/img/1-2.png" alt="">
+                <span>晚点名</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <div class="header">
+            <h4>学生返校信息上报系统</h4>
+            <span>收起</span>
+        </div>
+        <ul class="list">
+            <li>
+                <img src="./src/img/2-1.png" alt="">
+                <span>扫描二维码返校</span>
+            </li>
+            <li>
+                <img src="./src/img/2-2.png" alt="">
+                <span>近14日健康信息</span>
+            </li>
+            <li>
+                <img src="./src/img/2-3.png" alt="">
+                <span>返校信息填报</span>
+            </li>
+            <li>
+                <img src="./src/img/2-4.png" alt="">
+                <span>编辑返校行程</span>
+            </li>
+            <li>
+                <img src="./src/img/2-5.png" alt="">
+                <span>近14日信息查看</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <div class="header">
+            <h4>学生外出审批系统</h4>
+            <span>收起</span>
+        </div>
+        <ul class="list">
+            <li>
+                <img src="./src/img/3-1.png" alt="">
+                <span>外出备案</span>
+            </li>
+            <li>
+                <img src="./src/img/3-2.png" alt="">
+                <span>销假备案</span>
+            </li>
+            <li onclick="location.href = './scan.html'">
+                <img src="./src/img/3-3.png" alt="">
+                <span>扫描二维码出入校门</span>
+            </li>
+            <li>
+                <img src="./src/img/3-4.png" alt="">
+                <span>研究生外出请假系统</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <div class="header">
+            <h4>招聘会</h4>
+            <span>收起</span>
+        </div>
+        <ul class="list">
+            <li>
+                <img src="./src/img/4-1.png" alt="">
+                <span>扫描二维码</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <div class="header">
+            <h4>校园安心系统</h4>
+            <span>收起</span>
+        </div>
+        <ul class="list">
+            <li>
+                <img src="./src/img/5-1.png" alt="">
+                <span>学生心理自检</span>
+            </li>
+            <li>
+                <img src="./src/img/5-2.png" alt="">
+                <span>学院工作报送</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <div class="header">
+            <h4>荣誉证书</h4>
+            <span>收起</span>
+        </div>
+        <ul class="list">
+            <li>
+                <img src="./src/img/6-1.png" alt="">
+                <span>我的荣誉证书</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <div class="header">
+            <h4>勤工助学</h4>
+            <span>收起</span>
+        </div>
+        <ul class="list">
+            <li>
+                <img src="./src/img/7-1.png" alt="">
+                <span>上岗考勤</span>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
