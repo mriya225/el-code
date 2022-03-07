@@ -14,7 +14,7 @@
             overflow-x: hidden;
             background-color: #f6f6f6;
             -webkit-tap-highlight-color: transparent;
-            padding: 0 0 2rem;
+            padding: 0 0 4rem;
         }
 
         * {
@@ -98,6 +98,51 @@
             height: 40px;
             margin-top: .15rem;
             font-size: 13px;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-top: 1px solid #e1e1e1;
+            list-style: none;
+            margin: 0;
+            padding: 2px 0;
+            background-color: white;
+        }
+
+        .footer:after {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer li {
+            float: left;
+            width: 33.333%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .footer li span {
+            color: #8d8d8d;
+            font-size: 12px;
+        }
+
+        .footer li:first-child img {
+            width: 28px;
+        }
+        .footer li:first-child span {
+            color: #5d9cd0;
+        }
+
+        .footer li img {
+            width: 32px;
+            height: auto;
+            object-fit: contain;
         }
     </style>
 </head>
@@ -231,5 +276,20 @@
         </ul>
     </div>
 </div>
+
+<ul class="footer">
+    <li>
+        <img src="./src/img/b-1.png" alt="">
+        <span>应用</span>
+    </li>
+    <li>
+        <img src="./src/img/b-2.png" alt="">
+        <span>消息</span>
+    </li>
+    <li>
+        <img src="./src/img/b-3.png" alt="">
+        <span>我的</span>
+    </li>
+</ul>
 </body>
 </html>
