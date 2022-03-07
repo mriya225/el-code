@@ -32,6 +32,7 @@
             font-size: 21px;
             line-height: 34px;
             text-align: center;
+            color: black;
         }
     </style>
 </head>
@@ -51,7 +52,7 @@
         const ip2 = localStorage.getItem("ip2");
         const ip3 = localStorage.getItem("ip3");
 
-        text.innerHTML = `允许${ip3}，学号${ip2}，姓名${ip1}，当前时间${new Date().format("yyyy-MM-dd hh:mm:ss")}`;
+        text.innerHTML = `允许${ip3},学号：${ip2},姓名：${ip1},当前时间${new Date().format("yyyy-MM-dd hh:mm:ss")}`;
     }
 </script>
 </body>
